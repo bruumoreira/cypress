@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="no-js" lang="PT-BR">
+
+<head>
+    <title>BSM - Calculadora</title>
+    <meta charset="utf-8"> 
+    <meta name="description" content="Calculadora">
+    <meta name="author" content="Bruna Stefani Moreira Torres Francisco">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/themes.css">
+
+</head>
+
+<body>
+    <img src="img/background.jpg" alt="Full Background" class="full-bg animation-pulseSlow">
+
+    <div class= "form-group" id="login-container">
+        <h1 class="h2 text-light text-center push-top-bottom animation-pullDown">
+            <div class="form-group" alt="BSM"></div><img src="img/bsm-arquitetura.png" width="300px" />
+        </h1>
+
+        <div id="login-container">
+            <div class="block animation-fadeInQuickInv">
+                <div class="block-title">
+                    <div class="block-options pull-right">
+                    </div>
+                    <h2>Calculadora</h2>
+                </div>
+
+                <form onsubmit="return false" class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <input type="numero 01" id="register-num1" name="register-num1" class="form-control"
+                                placeholder="Número 01">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <input type="numero 02" id="register-num2" name="register-num2" class="form-control"
+                                placeholder="Número 02">
+                        </div>
+                    </div>
+
+                    <div class="row push">
+                        <div class="col-xs-3">
+                            <button id="bt-soma" class="btn btn-lg btn-sm btn-success btn-block"
+                                onclick="soma (document.getElementById('register-num1').value, document.getElementById('register-num2').value)">
+                                <h3>+</h3>
+                            </button>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <button id="bt-subtrair" class="btn btn-lg btn-sm btn-danger btn-block"
+                                onclick="subtrair (document.getElementById('register-num1').value, document.getElementById('register-num2').value)">
+                                <h3>-</h3>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button id="bt-dividir" class="btn btn-lg btn-sm btn-warning btn-block"
+                                onclick="dividir(document.getElementById('register-num1').value, document.getElementById('register-num2').value)">
+                                <h3>/</h3>
+                            </button>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <button id="bt-multiplica" class="btn btn-lg btn-sm btn-info btn-block"
+                                onclick="multiplica(document.getElementById('register-num1').value, document.getElementById('register-num2').value)">
+                                <h3>*</h3>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <input type="resultado" id="register-resultado" name="register-resultado"
+                                class="form-control" placeholder="Resultado">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <footer class="text-muted text-center animation-pullUp">
+                <small><span>2022</span> &copy; BSM - 
+                    <a href="https://www.linkedin.com/in/bruna-moreira-torres-francisco/" target="_blank">Bruna Moreira Francisco</a>
+                </small>
+            </footer>
+        </div>
+
+        <script src="js/lib/jquery-2.2.4.min.js"></script>
+        <script src="js/lib/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/pages/index.js"></script>
+</body>
+
+</html>

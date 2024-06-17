@@ -1,0 +1,14 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "cypress-practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bruna Stefani Moreira Torres Francisco",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.11.0"
+  }
+}
